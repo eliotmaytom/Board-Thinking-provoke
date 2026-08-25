@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Freeman&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<script src="./image-slot.js"></script>
+<style>
+  body { margin: 0; background: #0a1236; }
+  a { color: #0070bf; text-decoration: none; }
+  a:hover { color: #00b2f0; }
+  @keyframes squad-marquee { from { transform: translateX(0); } to { transform: translateX(calc(-50% - 12px)); } }
+  @media (prefers-reduced-motion: reduce) { .squad-track { animation: none !important; } }
+</style>
+</helmet>
+<div style="font-family: Roboto, sans-serif; color: #0a1236; background: #ffffff; overflow-x: hidden">
+
+  <header style="background: #0a1236; padding: 24px 48px; display: flex; align-items: center; justify-content: space-between">
+    <img src="./maximy-logo-white.svg" alt="Maximy" style="height: 34px; width: auto; display: block" />
+    <a href="#book" style="font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: #f2f2f2; font-weight: 500">{{ ctaLabel }}</a>
+  </header>
+
+  <section style="background: #0a1236; padding: 72px 48px 96px">
+    <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 64px; align-items: center">
+      <div>
+        <h1 style="font-family: Freeman, sans-serif; font-weight: 400; font-size: 58px; line-height: 1.12; color: #ffffff; margin: 0 0 28px; text-wrap: pretty">The future of your organisation depends on the quality of your top team's thinking</h1>
+        <p style="font-size: 18px; line-height: 1.65; color: rgba(242,242,242,0.72); margin: 0 0 36px; max-width: 620px"><strong style="font-weight: 700; color: rgba(242,242,242,0.72)">Your top team makes the biggest calls</strong> and sets the standard for thinking for everyone else, whether it intends to or not. Better thinking leads to better conversations, better decisions, better actions and better results.</p>
+        <a href="#book" style="display: inline-flex; align-items: center; height: 48px; padding: 0 28px; background: #ffffff; color: #0a1236; border-radius: 3px; font-size: 16px; font-weight: 500" style-hover="background: #00fff0">{{ ctaLabel }}</a>
+      </div>
+      <div style="position: relative; width: 100%; max-width: 480px; justify-self: center; aspect-ratio: 1000 / 1084">
+        <svg viewBox="0 0 1000 1084" style="position: absolute; inset: 0; width: 100%; height: 100%">
+          <path d="M 502 52 L 138 971 L 502 821 L 870 971 Z" fill="none" stroke="#00fff0" stroke-width="16" stroke-linejoin="miter"></path>
+        </svg>
+        <div style="position: absolute; left: 13.2%; top: 14.11%; width: 74%; height: 68.27%">
+          <div style="position: absolute; inset: 0; border-radius: 50%; overflow: hidden; opacity: {{ o1 }}; transition: none">
+            <image-slot id="hero-1" shape="circle" placeholder="Hero photo 1"></image-slot>
+          </div>
+          <div style="position: absolute; inset: 0; border-radius: 50%; overflow: hidden; opacity: {{ o2 }}">
+            <image-slot id="hero-2" shape="circle" placeholder="Hero photo 2"></image-slot>
+          </div>
+          <div style="position: absolute; inset: 0; border-radius: 50%; overflow: hidden; opacity: {{ o3 }}">
+            <image-slot id="hero-3" shape="circle" placeholder="Hero photo 3"></image-slot>
+          </div>
+          <div style="position: absolute; inset: 0; border-radius: 50%; overflow: hidden; opacity: {{ o4 }}">
+            <image-slot id="hero-4" shape="circle" placeholder="Hero photo 4"></image-slot>
+          </div>
+        </div>
+        <svg viewBox="0 0 1000 1084" style="position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none">
+          <path d="M 138 971 L 502 821 L 870 971 L 502 52" fill="none" stroke="#00fff0" stroke-width="16" stroke-linejoin="miter"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: #ffffff; padding: 104px 48px">
+    <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center">
+      <div>
+        <h2 style="font-family: Freeman, sans-serif; font-weight: 400; font-size: 42px; line-height: 1.15; color: #0070bf; margin: 0 0 24px">It starts at the top</h2>
+        <p style="font-size: 18px; line-height: 1.7; margin: 0 0 20px">You need the best possible thinkers and action takers on your board and executive team. If they are not walking the talk, your organisation will not be either.</p>
+        <p style="font-size: 18px; line-height: 1.7; margin: 0">No one is a perfect thinker. We are all human. The frailties that produce poor quality thinking catch everyone, and the more senior you are, the harder they become to avoid. Fewer people challenge you openly. Information arrives faster than it can be considered. The diary fills with whatever is urgent.</p>
+      </div>
+      <div style="height: 420px; border-radius: 8px; overflow: hidden">
+        <image-slot id="s2-photo" shape="rect" placeholder="Boardroom or group photo"></image-slot>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: #0a1236; padding: 104px 48px">
+    <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px">
+      <h2 style="font-family: Freeman, sans-serif; font-weight: 400; font-size: 42px; line-height: 1.15; color: #00b2f0; margin: 0">The agenda has never asked more of judgement</h2>
+      <div>
+        <p style="font-size: 18px; line-height: 1.7; color: rgba(242,242,242,0.82); margin: 0 0 20px">AI, geopolitics, climate change, cyber, workforce change and public trust no longer sit on your agenda as separate items. They collide inside the same decisions, and a choice that looks right in one part of the organisation can create exposure in another.</p>
+        <p style="font-size: 18px; line-height: 1.7; color: rgba(242,242,242,0.82); margin: 0">The visible agenda is the topics. The real work underneath is judgement. Growth or resilience. Speed or control. Efficiency or capability. That judgement is only as good as the thinking behind it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: #f2f2f2; padding: 104px 48px">
+    <div style="max-width: 1240px; margin: 0 auto">
+      <h2 style="font-family: Freeman, sans-serif; font-weight: 400; font-size: 42px; line-height: 1.15; color: #0070bf; margin: 0 0 56px; max-width: 760px">What top leaders say about their own rooms</h2>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px">
+        <div style="background: #ffffff; padding: 40px 32px; border-radius: 8px; display: flex; flex-direction: column; gap: 18px">
+          <div style="font-family: Freeman, sans-serif; font-size: 68px; line-height: 1; color: #0070bf">37%</div>
+          <p style="font-size: 17px; line-height: 1.6; margin: 0">Only 37% of directors see their board as essential to value creation.</p>
+          <p style="font-size: 13px; line-height: 1.5; margin: 0; color: rgba(10,18,54,0.55)">Board Intelligence, Board Value Index, June 2026</p>
+        </div>
+        <div style="background: #ffffff; padding: 40px 32px; border-radius: 8px; display: flex; flex-direction: column; gap: 18px">
+          <div style="font-family: Freeman, sans-serif; font-size: 68px; line-height: 1; color: #0070bf">16%</div>
+          <p style="font-size: 17px; line-height: 1.6; margin: 0">CEOs spend just 16% of their time on decisions looking more than five years ahead, and 47% on issues within the next year.</p>
+          <p style="font-size: 13px; line-height: 1.5; margin: 0; color: rgba(10,18,54,0.55)">PwC 29th Global CEO Survey, January 2026</p>
+        </div>
+        <div style="background: #ffffff; padding: 40px 32px; border-radius: 8px; display: flex; flex-direction: column; gap: 18px">
+          <div style="font-family: Freeman, sans-serif; font-size: 68px; line-height: 1; color: #0070bf">55%</div>
+          <p style="font-size: 17px; line-height: 1.6; margin: 0">Over half of directors say at least one fellow board member should be replaced.</p>
+          <p style="font-size: 13px; line-height: 1.5; margin: 0; color: rgba(10,18,54,0.55)">PwC Annual Corporate Directors Survey, October 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: #ffffff; padding: 104px 48px">
+    <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: center">
+      <div>
+        <h2 style="font-family: Freeman, sans-serif; font-weight: 400; font-size: 42px; line-height: 1.15; color: #0070bf; margin: 0 0 32px">Five questions worth sitting with</h2>
+        <div style="display: flex; flex-direction: column; gap: 0">
+          <div style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 16px 0; border-top: 1px solid rgba(10,18,54,0.14)">
+            <div style="font-family: Freeman, sans-serif; font-size: 22px; color: #00b2f0; line-height: 1.6">01</div>
+            <p style="font-size: 18px; line-height: 1.6; margin: 0">How many of your top team could describe the future you are building in the same words?</p>
+          </div>
+          <div style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 16px 0; border-top: 1px solid rgba(10,18,54,0.14)">
+            <div style="font-family: Freeman, sans-serif; font-size: 22px; color: #00b2f0; line-height: 1.6">02</div>
+            <p style="font-size: 18px; line-height: 1.6; margin: 0">Think about your last three significant decisions. In how many did somebody say out loud that they disagreed?</p>
+          </div>
+          <div style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 16px 0; border-top: 1px solid rgba(10,18,54,0.14)">
+            <div style="font-family: Freeman, sans-serif; font-size: 22px; color: #00b2f0; line-height: 1.6">03</div>
+            <p style="font-size: 18px; line-height: 1.6; margin: 0">Where does this team over-think, and where does it under-think?</p>
+          </div>
+          <div style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 16px 0; border-top: 1px solid rgba(10,18,54,0.14)">
+            <div style="font-family: Freeman, sans-serif; font-size: 22px; color: #00b2f0; line-height: 1.6">04</div>
+            <p style="font-size: 18px; line-height: 1.6; margin: 0">Are your leaders using AI to buy back time and augment their judgement, or to outsource their thinking?</p>
+          </div>
+          <div style="display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 16px 0; border-top: 1px solid rgba(10,18,54,0.14); border-bottom: 1px solid rgba(10,18,54,0.14)">
+            <div style="font-family: Freeman, sans-serif; font-size: 22px; color: #00b2f0; line-height: 1.6">05</div>
+            <p style="font-size: 18px; line-height: 1.6; margin: 0">Hand on heart, can every member of your board and executive team say they are being the best possible thinker and action taker?</p>
+          </div>
+        </div>
+      </div>
+      <div style="height: 560px; border-radius: 8px; overflow: hidden">
+        <image-slot id="s5-photo" shape="rect" placeholder="Reflective portrait or landscape"></image-slot>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: #f2f2f2; padding: 104px 48px">
+    <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: start">
+      <h2 style="font-family: Freeman, sans-serif; font-weight: 400; font-size: 42px; line-height: 1.15; color: #0070bf; margin: 0">How we could help,<br />asked as questions</h2>
+      <div style="display: flex; flex-direction: column; gap: 20px">
+        <div style="display: grid; grid-template-columns: 20px 1fr; gap: 14px"><div style="color: #00b2f0; font-size: 18px; line-height: 1.7">&bull;</div><p style="font-size: 18px; line-height: 1.7; margin: 0">What would your biggest decisions look like if you were all being the best possible thinking partners to each other?</p></div>
+        <div style="display: grid; grid-template-columns: 20px 1fr; gap: 14px"><div style="color: #00b2f0; font-size: 18px; line-height: 1.7">&bull;</div><p style="font-size: 18px; line-height: 1.7; margin: 0">What would your meetings produce if the atmosphere drew the best thinking out of everyone, healthy challenge included?</p></div>
+        <div style="display: grid; grid-template-columns: 20px 1fr; gap: 14px"><div style="color: #00b2f0; font-size: 18px; line-height: 1.7">&bull;</div><p style="font-size: 18px; line-height: 1.7; margin: 0">And what would each of your leaders do with the time a personal AI coach could buy them back, one built around how they think, so the hours saved go into what truly matters?</p></div>
+        <p style="font-size: 18px; line-height: 1.7; margin: 8px 0 0; padding-top: 24px; border-top: 1px solid rgba(10,18,54,0.16); color: rgba(10,18,54,0.8)">We give top teams the structure, tools, skills and atmosphere for exactly this. The conversations, decisions and actions stay yours.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="background: #ffffff; padding: 104px 48px">
+    <div style="max-width: 1240px; margin: 0 auto">
+      <h2 style="font-family: Freeman, sans-serif; font-weight: 400; font-size: 42px; line-height: 1.15; color: #0070bf; margin: 0 0 48px">Behind those questions sit two things</h2>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px">
+        <div style="border-top: 3px solid #00b2f0; padding: 28px 0 0">
+          <h3 style="font-family: Freeman, sans-serif; font-weight: 400; font-size: 26px; color: #0a1236; margin: 0 0 16px">Leadership Analytics</h3>
+          <p style="font-size: 18px; line-height: 1.7; margin: 0">Lenses, data and structured reflection that show an individual leader, a team or a whole board how they think today. A lens is a shared picture of what the best possible looks like, so you can see where you are against it.</p>
+        </div>
+        <div style="border-top: 3px solid #00b2f0; padding: 28px 0 0">
+          <h3 style="font-family: Freeman, sans-serif; font-weight: 400; font-size: 26px; color: #0a1236; margin: 0 0 16px">Leadership Builders</h3>
+          <p style="font-size: 18px; line-height: 1.7; margin: 0">The people and practice that build it. Coaching, team sessions, practice labs, observation and feedback, guides and AI support. One priority, one action, one improvement at a time.</p>
+        </div>
+      </div>
+      <p style="font-size: 20px; line-height: 1.6; margin: 48px 0 0; color: #0070bf">The work fits the team, rather than the team fitting the programme.</p>
+    </div>
+  </section>
+
+  <section style="background: #0a1236; padding: 104px 48px">
+    <div style="max-width: 1240px; margin: 0 auto">
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 56px">
+        <div style="font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; color: #00fff0; margin-bottom: 20px">The Thinking Squad</div>
+        <h2 style="font-family: Freeman, sans-serif; font-weight: 400; font-size: 42px; line-height: 1.15; color: #ffffff; margin: 0 0 24px; max-width: 900px">Meet our Thinking Squad</h2>
+        <p style="font-size: 18px; line-height: 1.7; color: rgba(242,242,242,0.82); margin: 0; max-width: 860px">The Thinking Squad is our curated group of expert guides. Psychologists, coaches, subject-matter experts, AI coaches and specialists, each with deep expertise in one part of how people think, decide and act. They work with individuals, groups and teams. Between us, we have pressure-tested this with FTSE 100 boards, military command, Olympic teams and founders.</p>
+      </div>
+      <div style="overflow: hidden; width: 100%">
+        <div class="squad-track" style="display: flex; gap: 24px; width: max-content; animation: squad-marquee 40s linear infinite">
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-1" shape="circle" placeholder="Guide 1"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-2" shape="circle" placeholder="Guide 2"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-3" shape="circle" placeholder="Guide 3"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-4" shape="circle" placeholder="Guide 4"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-5" shape="circle" placeholder="Guide 5"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-6" shape="circle" placeholder="Guide 6"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-7" shape="circle" placeholder="Guide 7"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-8" shape="circle" placeholder="Guide 8"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-1b" shape="circle" placeholder="Guide 1"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-2b" shape="circle" placeholder="Guide 2"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-3b" shape="circle" placeholder="Guide 3"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-4b" shape="circle" placeholder="Guide 4"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-5b" shape="circle" placeholder="Guide 5"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-6b" shape="circle" placeholder="Guide 6"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-7b" shape="circle" placeholder="Guide 7"></image-slot>
+          </div>
+          <div style="width: 170px; height: 170px; flex: 0 0 auto; border-radius: 50%; overflow: hidden">
+            <image-slot id="squad-8b" shape="circle" placeholder="Guide 8"></image-slot>
+          </div>
+        </div>
+      </div>
+      <p style="font-family: Freeman, sans-serif; font-weight: 400; font-size: 30px; line-height: 1.3; color: #00fff0; text-align: center; margin: 56px 0 0">Better thinking, better conversations, better decisions, better action.</p>
+    </div>
+  </section>
+
+  <section id="book" style="background: #f2f2f2; padding: 104px 48px 112px">
+    <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center">
+      <div>
+        <h2 style="font-family: Freeman, sans-serif; font-weight: 400; font-size: 42px; line-height: 1.15; color: #0070bf; margin: 0 0 24px">Start with a provocation</h2>
+        <p style="font-size: 18px; line-height: 1.7; color: #0a1236; margin: 0 0 20px">We bring these questions and our point of view to your board or executive team in a one-hour session. Your team does the reflecting. Its only job is to help you decide whether this is worth your time, and where the best use of your time, energy and investment would be.</p>
+        <p style="font-size: 18px; line-height: 1.7; color: #0070bf; font-weight: 500; margin: 0 0 36px">The conversation to set it up takes half an hour.</p>
+        <a href="{{ ctaHref }}" style="display: inline-flex; align-items: center; height: 48px; padding: 0 28px; background: #0070bf; color: #ffffff; border-radius: 3px; font-size: 16px; font-weight: 500" style-hover="background: #0a1236">{{ ctaLabel }}</a>
+      </div>
+      <div style="height: 360px; border-radius: 8px; overflow: hidden">
+        <image-slot id="cta-photo" shape="rect" placeholder="Session or conversation photo"></image-slot>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background: #0a1236; border-top: 1px solid rgba(242,242,242,0.16); padding: 56px 48px 40px">
+    <div style="max-width: 1240px; margin: 0 auto">
+      <div style="display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 48px">
+        <img src="./maximy-logo-white.svg" alt="Maximy" style="height: 48px; width: auto; display: block" />
+        <div style="display: flex; flex-direction: column; gap: 16px">
+          <div style="font-size: 15px; font-weight: 500; color: #00b2f0; margin-bottom: 4px">For Individuals</div>
+          <a href="https://maximy.life/what-we-do-and-why" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">What We Do &amp; Why</a>
+          <a href="https://maximy.life/being-the-best-possible-leader" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">Being the Best Possible Leader</a>
+          <a href="https://maximy.life/leadership-analytics" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">Leadership Analytics</a>
+          <a href="https://maximy.life/leadership-builders-and-strengtheners" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">Leadership Builders &amp; Strengtheners</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px">
+          <div style="font-size: 15px; font-weight: 500; color: #00fff0; margin-bottom: 4px">For Organisations</div>
+          <a href="https://maximy.life/identify-your-potential" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">Identify Your Potential</a>
+          <a href="https://maximy.life/seize-your-potential" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">Seize Your Potential</a>
+          <a href="https://maximy.life/leadership-essentials" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">Leadership Essentials</a>
+          <a href="https://maximy.life/c-suite-and-board-level-support" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">C-Suite &amp; Board Level Support</a>
+          <a href="https://maximy.life/career-support" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">Career Support</a>
+          <a href="https://maximy.life/practice-forum-and-labs" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">Practice Forum &amp; Labs</a>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px">
+          <div style="font-size: 15px; font-weight: 500; color: #00b2f0; margin-bottom: 4px">About Us</div>
+          <a href="https://maximy.life/our-story" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">Our Story</a>
+          <a href="https://maximy.life/our-purpose-values-and-philosophy" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">Our Purpose, Values and Philosophy</a>
+          <a href="https://maximy.life/why-maximy" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">Why Maximy</a>
+          <a href="https://maximy.life/what-others-say" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">What Others Say</a>
+          <a href="https://maximy.life/our-team" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">Our Team</a>
+          <a href="https://maximy.life/log-in" target="_blank" rel="noopener" style="font-size: 15px; color: rgba(242,242,242,0.85)" style-hover="color: #00fff0">Log in</a>
+        </div>
+      </div>
+      <div style="border-top: 1px solid rgba(242,242,242,0.12); padding-top: 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px; font-size: 13px; color: rgba(242,242,242,0.6)">
+        <span>© 2026 Maximy. All rights reserved.</span>
+        <a href="https://maximy.life/privacy-policy" target="_blank" rel="noopener" style="font-size: 13px; color: rgba(242,242,242,0.85); text-decoration: underline" style-hover="color: #00fff0">Privacy Policy</a>
+        <a href="https://maximy.life/terms-and-conditions" target="_blank" rel="noopener" style="font-size: 13px; color: rgba(242,242,242,0.85); text-decoration: underline" style-hover="color: #00fff0">Terms &amp; Conditions</a>
+        <a href="https://maximy.life/cookie-policy" target="_blank" rel="noopener" style="font-size: 13px; color: rgba(242,242,242,0.85); text-decoration: underline" style-hover="color: #00fff0">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;ctaLabel&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Book a discovery call&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;ctaHref&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;#book&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;rotateHeroPhotos&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;heroRotationSeconds&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:4,&quot;min&quot;:2,&quot;max&quot;:10,&quot;step&quot;:1,&quot;unit&quot;:&quot;s&quot;,&quot;tsType&quot;:&quot;number&quot;}}">
+class Component extends DCLogic {
+  state = { i: 0 };
+  componentDidMount() {
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || this.props.rotateHeroPhotos === false) return;
+    const secs = this.props.heroRotationSeconds ?? 4;
+    this.timer = setInterval(() => this.setState(s => ({ i: (s.i + 1) % 4 })), secs * 1000);
+  }
+  componentWillUnmount() { clearInterval(this.timer); }
+  renderVals() {
+    const i = this.state.i;
+    return {
+      ctaLabel: this.props.ctaLabel ?? 'Book a discovery call',
+      ctaHref: this.props.ctaHref ?? '#book',
+      o1: i === 0 ? 1 : 0,
+      o2: i === 1 ? 1 : 0,
+      o3: i === 2 ? 1 : 0,
+      o4: i === 3 ? 1 : 0
+    };
+  }
+}
+</script>
+</body>
+</html>
