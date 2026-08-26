@@ -68,6 +68,7 @@
   .hero-photos { position: absolute; left: 13.2%; top: 14.11%; width: 74%; height: 68.27%; }
   .hero-photo { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; opacity: 0; }
   .hero-photo.is-active { opacity: 1; }
+  .hero-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
   /* two-column content sections (text + photo) */
   .two-col { display: flex; flex-wrap: wrap; gap: clamp(36px, 5vw, 56px); align-items: center; }
@@ -75,9 +76,10 @@
   .two-col h2 { font-size: clamp(28px, 3.6vw, 42px); line-height: 1.15; color: #0070bf; margin: 0 0 24px; }
   .two-col p { font-size: 18px; line-height: 1.7; margin: 0 0 20px; }
   .two-col p:last-child { margin-bottom: 0; }
-  .photo-420 { height: clamp(260px, 32vw, 420px); }
-  .photo-560 { height: clamp(260px, 40vw, 560px); }
-  .photo-360 { height: clamp(240px, 28vw, 360px); }
+  .photo-420 { height: clamp(260px, 32vw, 420px); border-radius: 8px; overflow: hidden; }
+  .photo-560 { height: clamp(260px, 40vw, 560px); border-radius: 8px; overflow: hidden; }
+  .photo-360 { height: clamp(240px, 28vw, 360px); border-radius: 8px; overflow: hidden; }
+  .photo-420 img, .photo-560 img, .photo-360 img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
   section { padding: clamp(56px, 8vw, 104px) 0; }
 
@@ -187,13 +189,13 @@
       </svg>
       <div class="hero-photos" id="heroPhotos">
         <div class="hero-photo is-active" data-hero-photo>
-          <div class="slot slot-circle slot-on-dark"><span>Hero photo 1</span></div>
+          <img src="assets/photos/hero-boardroom2.jpg" alt="Boardroom in discussion">
         </div>
         <div class="hero-photo" data-hero-photo>
           <div class="slot slot-circle slot-on-dark"><span>Hero photo 2</span></div>
         </div>
         <div class="hero-photo" data-hero-photo>
-          <div class="slot slot-circle slot-on-dark"><span>Hero photo 3</span></div>
+          <img src="assets/photos/hero-shutterstock-1687550977.jpg" alt="Board and executive team in discussion">
         </div>
         <div class="hero-photo" data-hero-photo>
           <div class="slot slot-circle slot-on-dark"><span>Hero photo 4</span></div>
@@ -214,7 +216,7 @@
       <p>No one is a perfect thinker. We are all human. The frailties that produce poor quality thinking catch everyone, and the more senior you are, the harder they become to avoid. Fewer people challenge you openly. Information arrives faster than it can be considered. The diary fills with whatever is urgent.</p>
     </div>
     <div class="photo-420">
-      <div class="slot slot-rect"><span>Boardroom or group photo</span></div>
+      <img src="assets/photos/boardroom.jpg" alt="Boardroom">
     </div>
   </div>
 </section>
@@ -265,7 +267,7 @@
       </div>
     </div>
     <div class="photo-560">
-      <div class="slot slot-rect"><span>Reflective portrait or landscape</span></div>
+      <img src="assets/photos/man-notepad.jpg" alt="Reflecting with a notepad">
     </div>
   </div>
 </section>
