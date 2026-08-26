@@ -37,8 +37,7 @@
   .header-bar { background: #0a1236; }
   .header-inner { padding: 22px 0; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
   .header-inner img { height: 34px; width: auto; display: block; }
-  .header-cta { font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; color: #f2f2f2; font-weight: 500; white-space: nowrap; }
-  .header-cta:hover { color: #00fff0; }
+  .header-cta { height: 44px; padding: 0 24px; border-radius: 6px; font-size: 15px; font-weight: 700; white-space: nowrap; }
 
   /* buttons */
   .btn { display: inline-flex; align-items: center; height: 48px; padding: 0 28px; border-radius: 3px; font-size: 16px; font-weight: 500; transition: background-color .15s, color .15s; }
@@ -122,7 +121,6 @@
   .thing-card { border-top: 3px solid #00b2f0; padding: 28px 0 0; }
   .thing-card h3 { font-size: 26px; color: #0a1236; margin: 0 0 16px; }
   .thing-card p { font-size: 18px; line-height: 1.7; margin: 0; }
-  .two-things-note { font-size: 20px; line-height: 1.6; margin: clamp(32px, 4vw, 48px) 0 0; color: #0070bf; }
 
   /* squad */
   .squad-section { background: #0a1236; }
@@ -142,7 +140,11 @@
   .cta-section { background: #f2f2f2; }
   .cta-section h2 { font-size: clamp(28px, 3.6vw, 42px); line-height: 1.15; color: #0070bf; margin: 0 0 24px; }
   .cta-section p { font-size: 18px; line-height: 1.7; color: #0a1236; margin: 0 0 20px; }
-  .cta-lead-time { color: #0070bf; font-weight: 500; margin: 0 0 36px !important; }
+
+  /* calendly panel — hidden until a "Book a discovery call" CTA is clicked */
+  .calendly-section { background: #ffffff; }
+  .calendly-section[hidden] { display: none; }
+  .calendly-section h2 { font-size: clamp(26px, 3.2vw, 36px); line-height: 1.15; color: #0070bf; margin: 0 0 28px; text-align: center; }
 
   /* footer */
   footer { background: #0a1236; border-top: 1px solid rgba(242,242,242,0.16); padding: 56px 0 40px; }
@@ -167,7 +169,7 @@
 <div class="header-bar">
   <div class="wrap header-inner">
     <img src="assets/maximy-white.svg" alt="Maximy">
-    <a class="header-cta" href="#book">Book a discovery call</a>
+    <a class="btn btn-blue header-cta" href="#calendlyPanel" data-book-cta>Book a discovery call</a>
   </div>
 </div>
 
@@ -176,7 +178,7 @@
     <div class="hero-copy">
       <h1>The future of your organisation depends on the quality of your top team's thinking</h1>
       <p><strong>Your top team makes the biggest calls</strong> and sets the standard for thinking for everyone else, whether it intends to or not. Better thinking leads to better conversations, better decisions, better actions and better results.</p>
-      <a class="btn btn-light" href="#book">Book a discovery call</a>
+      <a class="btn btn-light" href="#calendlyPanel" data-book-cta>Book a discovery call</a>
     </div>
     <div class="hero-art">
       <svg viewBox="0 0 1000 1084" aria-hidden="true">
@@ -207,7 +209,7 @@
   <div class="wrap two-col">
     <div>
       <h2>It starts at the top</h2>
-      <p>You need the best possible thinkers and action takers on your board and executive team. If they are not walking the talk, your organisation will not be either.</p>
+      <p><strong>You need the best possible thinkers and action takers on your board and executive team. If they are not walking the talk, your organisation will not be either.</strong></p>
       <p>No one is a perfect thinker. We are all human. The frailties that produce poor quality thinking catch everyone, and the more senior you are, the harder they become to avoid. Fewer people challenge you openly. Information arrives faster than it can be considered. The diary fills with whatever is urgent.</p>
     </div>
     <div class="photo-420">
@@ -221,7 +223,7 @@
     <h2>The agenda has never asked more of judgement</h2>
     <div>
       <p>AI, geopolitics, climate change, cyber, workforce change and public trust no longer sit on your agenda as separate items. They collide inside the same decisions, and a choice that looks right in one part of the organisation can create exposure in another.</p>
-      <p>The visible agenda is the topics. The real work underneath is judgement. Growth or resilience. Speed or control. Efficiency or capability. That judgement is only as good as the thinking behind it.</p>
+      <p>The visible agenda is the topics. The real work underneath is judgement. Growth or resilience. Speed or control. Efficiency or capability. <strong>That judgement is only as good as the thinking behind it.</strong></p>
     </div>
   </div>
 </section>
@@ -271,9 +273,9 @@
   <div class="wrap two-col">
     <h2>How we could help,<br>asked as questions</h2>
     <div class="help-list">
-      <div class="help-row"><div class="help-bullet">&bull;</div><p>What would your biggest decisions look like if you were all being the best possible thinking partners to each other?</p></div>
-      <div class="help-row"><div class="help-bullet">&bull;</div><p>What would your meetings produce if the atmosphere drew the best thinking out of everyone, healthy challenge included?</p></div>
-      <div class="help-row"><div class="help-bullet">&bull;</div><p>And what would each of your leaders do with the time a personal AI coach could buy them back, one built around how they think, so the hours saved go into what truly matters?</p></div>
+      <div class="help-row"><div class="help-bullet">&bull;</div><p><strong>What would your biggest decisions look like if you were all being the best possible thinking partners to each other?</strong></p></div>
+      <div class="help-row"><div class="help-bullet">&bull;</div><p><strong>What would your meetings produce if the atmosphere drew the best thinking out of everyone, healthy challenge included?</strong></p></div>
+      <div class="help-row"><div class="help-bullet">&bull;</div><p><strong>And what would each of your leaders do with the time a personal AI coach could buy them back, one built around how they think, so the hours saved go into what truly matters?</strong></p></div>
       <p class="help-note">We give top teams the structure, tools, skills and atmosphere for exactly this. The conversations, decisions and actions stay yours.</p>
     </div>
   </div>
@@ -292,7 +294,6 @@
         <p>The people and practice that build it. Coaching, team sessions, practice labs, observation and feedback, guides and AI support. One priority, one action, one improvement at a time.</p>
       </div>
     </div>
-    <p class="two-things-note">The work fits the team, rather than the team fitting the programme.</p>
   </div>
 </section>
 
@@ -342,12 +343,18 @@
     <div>
       <h2>Start with a provocation</h2>
       <p>We bring these questions and our point of view to your board or executive team in a one-hour session. Your team does the reflecting. Its only job is to help you decide whether this is worth your time, and where the best use of your time, energy and investment would be.</p>
-      <p class="cta-lead-time">The conversation to set it up takes half an hour.</p>
-      <a class="btn btn-blue" href="#book">Book a discovery call</a>
+      <a class="btn btn-blue" href="#calendlyPanel" data-book-cta>Book a discovery call</a>
     </div>
     <div class="photo-360">
       <div class="slot slot-rect"><span>Session or conversation photo</span></div>
     </div>
+  </div>
+</section>
+
+<section id="calendlyPanel" class="calendly-section" hidden>
+  <div class="wrap">
+    <h2>Pick a time</h2>
+    <div class="calendly-inline-widget" data-url="https://calendly.com/eliot-maximy/discovery-with-eliot" style="min-width:320px;height:700px"></div>
   </div>
 </section>
 
@@ -403,6 +410,34 @@
       el.classList.toggle('is-active', idx === i);
     });
   }, 4000);
+})();
+</script>
+<script>
+(function () {
+  var panel = document.getElementById('calendlyPanel');
+  var triggers = Array.prototype.slice.call(document.querySelectorAll('[data-book-cta]'));
+  if (!panel || !triggers.length) return;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var widgetLoaded = false;
+
+  function loadWidgetScript(onReady) {
+    if (widgetLoaded) { onReady(); return; }
+    var s = document.createElement('script');
+    s.src = 'https://assets.calendly.com/assets/external/widget.js';
+    s.async = true;
+    s.onload = function () { widgetLoaded = true; onReady(); };
+    document.body.appendChild(s);
+  }
+
+  triggers.forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      panel.hidden = false;
+      loadWidgetScript(function () {
+        panel.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+      });
+    });
+  });
 })();
 </script>
 </body>

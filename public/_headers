@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn-cookieyes.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://cdn-cookieyes.com; font-src 'self'; frame-src 'none'; connect-src 'self' https://cdn-cookieyes.com https://log.cookieyes.com https://directory.cookieyes.com; form-action 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn-cookieyes.com https://assets.calendly.com; style-src 'self' 'unsafe-inline' https://assets.calendly.com; img-src 'self' data: https://cdn-cookieyes.com https://*.calendly.com; font-src 'self'; frame-src https://calendly.com; connect-src 'self' https://cdn-cookieyes.com https://log.cookieyes.com https://directory.cookieyes.com https://calendly.com; form-action 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
